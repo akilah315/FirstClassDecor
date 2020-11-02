@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Decor' | Home Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="CSS/firstclass.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#"><img src="#" height="30" width="30" class="d-inline-block align-top"/>smLogo</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav mr-3">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" href="#">Home </a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">| About </a> 
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">| Services</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">| Portfolio</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Book A Consult
+        </button>
+        
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Book A Consult</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div id="form-contact">
+                            <h2>Let's get this party started!</h2>
+                            <p>For general business inquires</p>
+                            <p>janelle_gatson@yahoo.com</p>
+                            <p>PH: (260) 515-7026</p>
+                        </div>
+                        <p>For event inquires, please fill out the form below and I will be in touch with more details.</p>
+                      
+                        <form>
+                            <label for="firstName"> First Name:</label>
+                            <input type="text" class="form-control" name="firstName" id="firstName">
+                            <br
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" name="lastName" id="lastName">
+                            <br>
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                            <br>
+                            <h4>Event Type:</h4>
+                            <input type="radio" id="wedding" name="event" value="wedding">
+                            <label for="wedding">Wedding</label>
+                            <br>
+                            <input type="radio" id="babyshower" name="event" value="babyshower">
+                            <label for="wedding">Babyshower</label>
+                            <br>
+                            <input type="radio" id="graduation" name="event" value="graduation">
+                            <label for="wedding">Graduation</label>
+                            <br>
+                            <input type="radio" id="birthday" name="event" value="birthday">
+                            <label for="wedding">Birthday</label>
+                            <br>
+                            <input type="radio" id="special-events" name="event" value="special-events">
+                            <label for="wedding">Special Event</label>
+                            <br>
+                            <input type="radio" id="balloon-columns" name="event" value="balloon-columns">
+                            <label for="wedding">Balloon Columns & Backdrops</label>
+                            <br>
+                            <label for="eventTheme">Event Theme:</label>
+                            <input type="text" class="form-control" name="eventTheme" id="eventTheme">
+                            <br>
+                            <label for="guestCount">Estimated Guest Count:</label>
+                            <input type="text" class="form-control" name="guestCount" id="guestCount">
+                            <br>
+                            <label for="date">Event Date:</label>
+                            <input type="date" class="form-control" name="date" id="date">
+                            <br>
+                            <label for="budget">Estimated Budget:</label>
+                            <input type="text" class="form-control" name="budget" id="budget">
+                            <br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </nav>
+
+    <!--JUMBOTRON-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">First Class Decor'</h1>
+          <p class="lead">Making your dreams possible.</p>
+        </div>
+      </div>
+    
+    <!--ABOUT ME-->
+    <h2 class="display-4 text-center">MEET YOUR EVENT PLANNER</h2>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex img-thumbnail" src="fcdimg/ProfilePics/IMG_2710.JPG" alt="Janelle Photo" width="400" height="400">
+                    <div class="media-body">
+                        <p class="d-none d-sm-block ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus necessitatibus laborum, porro veniam alias ullam. 
+                        Harum, dolore distinctio fuga quod velit magnam pariatur ullam. 
+                        Cupiditate quidem quis aspernatur laudantium! Facilis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--SERVICES-->
+    <h2 class="display-4 text-center">SERVICES</h2>
+    <div class="container">
+        <div class="row row-content>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-left ml-5">
+                        <h4>WEDDINGS</h4>
+                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="fcdimg/weddings/navyanddustyrose.jpg" alt="wedding image" width="400" height="500">
+                </div>
+            </div
+        </div>
+    </div>
+        <hr>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div class="media">
+                <img class="d-flex ml-3 img-thumbnail" src="fcdimg/babyshowers/genderrevealprinceorprincess.jpg" alt="babyshower image" width="300" height="300">
+                    <div class="media-body">
+                        <h4>BABYSHOWERS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr>
+    <div class="container">
+        <div class="row row-content>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-left ml-5">
+                        <h4>GRADUATIONS</h4>
+                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="fcdimg/graduations/iupui.jpg" alt="graduation image" width="300" height="300">
+                </div>
+            </div
+        </div>
+    </div>
+        <hr>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div class="media">
+                <img class="d-flex ml-3 img-thumbnail" src="fcdimg/birthdays/coco.jpg" alt="birthday image" width="400" height="300">
+                    <div class="media-body">
+                        <h4>BIRTHDAYS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <hr>
+    <div class="container"
+        <div class="row row-content>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-left ml-5">
+                        <h4>SPECIAL EVENTS</h4>
+                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="fcdimg/special events/fallandwine.jpg" alt="special events image" width="400" height="300">
+                </div>
+            </div
+        </div>
+    </div>
+        <hr>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div class="media">
+                <img class="d-flex ml-3 img-thumbnail" src="fcdimg/balloon columns,backdrops/blueandsliver.jpg" alt="columns and backdrop image" width="300" height="300">
+                    <div class="media-body">
+                        <h4>BALLOON COLUMNS & BACKDROPS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Qui soluta incidunt nisi laborum enim? Illo voluptas eum 
+                                explicabo consequuntur ut vero libero quisquam, temporibus fugiat, 
+                                iure vitae culpa veritatis dolorum.</p>
+                            <button type="button">view photos</button>
+                            <button type="button">book a consult</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!--TESTIMONIALS-->
+    <div class="container">
+        <h2 class="display-4 text-center">TESTIMONIALS</h2>
+        <blockquote class="blockquote text-center">
+            <p>"The experience I’ve had with Janelle has been amazing and worry free. I give an idea of colors and she creates
+                exactly what I wanted and more. She has done my daughters 30th bday made it so Beautiful. My granddaughter’s baby
+                shower . She’s so professional. Thank you and I will be calling on you for plenty more events."</p>
+                <footer class="blockquote-footer">Ayanna Cooper</footer>
+        </blockquote>
+    </div>
+
+    <!--CONTACT-->
+    <div class="container">
+        <footer>
+            <h2 class="display-4 text-center">CONTACT</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li> 
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+            <img src="#" alt="smLogo">
+            <button type="button">book a consult</button>
+        </footer>
+    </div>
+
+    <span>&copy;2020 First Class Decor' Event Planner</span>
+    <span>Site created with love by Akilah Q.</span>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
+
+
+
+
