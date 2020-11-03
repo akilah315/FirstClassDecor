@@ -12,9 +12,13 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#"><img src="#" height="30" width="30" class="d-inline-block align-top"/>smLogo</a>
-        <div class="collapse navbar-collapse justify-content-end">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#firstNav"
+            <span class="navbar-toggler-icon"></span>
+        </button>   
+    
+        <div class="collapse navbar-collapse justify-content-end" id="firstNav">
             <ul class="navbar-nav mr-3">
                 <li class="nav-item mx-3">
                     <a class="nav-link active" href="#">Home </a>
@@ -33,9 +37,7 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            Book A Consult
-        </button>
+        
         
         <!-- The Modal -->
         <div class="modal" id="myModal">
@@ -74,19 +76,22 @@
                             <label for="wedding">Wedding</label>
                             <br>
                             <input type="radio" id="babyshower" name="event" value="babyshower">
-                            <label for="wedding">Babyshower</label>
+                            <label for="babyshower">Babyshower</label>
                             <br>
                             <input type="radio" id="graduation" name="event" value="graduation">
-                            <label for="wedding">Graduation</label>
+                            <label for="graduation">Graduation</label>
                             <br>
                             <input type="radio" id="birthday" name="event" value="birthday">
-                            <label for="wedding">Birthday</label>
+                            <label for="birthday">Birthday</label>
                             <br>
                             <input type="radio" id="special-events" name="event" value="special-events">
-                            <label for="wedding">Special Event</label>
+                            <label for="special-event">Special Event</label>
                             <br>
                             <input type="radio" id="balloon-columns" name="event" value="balloon-columns">
-                            <label for="wedding">Balloon Columns & Backdrops</label>
+                            <label for="balloons">Balloon Columns & Backdrops</label>
+                            <br>
+                            <input type="radio" id="customShirts" name="event" value="custom-shirts">
+                            <label for="custom-shirts">Custom Shirts</label>
                             <br>
                             <label for="eventTheme">Event Theme:</label>
                             <input type="text" class="form-control" name="eventTheme" id="eventTheme">
@@ -138,6 +143,7 @@
         </div>
     </div>
     <hr>
+    
     <!--SERVICES-->
     <h2 class="display-4 text-center">SERVICES</h2>
     <div class="container">
@@ -277,7 +283,7 @@
                 <li>Portfolio</li>
                 <li>Contact</li>
             </ul>
-            <img src="#" alt="smLogo">
+            <img src="fcdimg/Logos/minlogo.png" alt="smLogo" height="300" width="300">
             <button type="button">book a consult</button>
         </footer>
     </div>
