@@ -1,3 +1,85 @@
 .jumbotron {
-    height: 400px;
+    height: 600px;
+}
+
+.custom-shirts {
+    width: 34%;
+}
+
+.navbar-nav {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#modalBtn {
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.container-height {
+    height: 600px;
+}
+
+#about {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#services {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+#testimonials {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contact {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+#special-hr {
+    margin: 90px 0;
+}
+
+footer {
+    height: 300px;
+}
+
+footer-nav {
+    color: black;
+    line-height: 5px;
+}
+
+#footerBtn {
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+#copyright {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.footer-text {
+    font-size: small;
+}
+
+.fa-heart {
+    color: red;
+}
+
+span {
+    font-family: 'Alex Brush', cursive;
+    font-size: 18px;
+
 }
