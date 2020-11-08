@@ -1,5 +1,6 @@
 .jumbotron {
     height: 600px;
+    text-align: center;
 }
 
 .custom-shirts {
@@ -21,6 +22,10 @@
     height: 600px;
 }
 
+#meetPhoto {
+    max-height: 500px;
+}
+
 #about {
     padding-top: 100px;
     margin-bottom: 50px;
@@ -29,6 +34,16 @@
 .about-text {
     font-size: 18px;
     line-height: 30px;
+}
+
+#signature {
+    font-family: 'Alex Brush', cursive;
+    font-size: 30px;
+}
+
+.media-body {
+    margin: 20px;
+    padding: 20px;
 }
 
 #services {
@@ -44,10 +59,6 @@
 #contact {
     padding-top: 100px;
     margin-bottom: 50px;
-}
-
-#special-hr {
-    margin: 90px 0;
 }
 
 footer {
@@ -74,6 +85,10 @@ footer-nav {
     font-size: small;
 }
 
+#footLogo {
+    padding-bottom: 40px;
+}
+
 .fa-heart {
     color: red;
 }
@@ -81,5 +96,25 @@ footer-nav {
 span {
     font-family: 'Alex Brush', cursive;
     font-size: 18px;
+}
 
+.allBtns {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: black;
+    font-size: px;
+}
+
+.blockquote {
+    font-style: italic;
 }

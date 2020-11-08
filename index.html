@@ -5,16 +5,18 @@
     <title>First Class Decor' | Home Page</title>
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- My CSS -->
     <link rel="stylesheet" href="CSS/firstclass.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    
 </head>
+
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" id="home">
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#firstNav"
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="firstNav">
             <ul class="navbar-nav mr-3">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" href="#">Home </a>
+                    <a class="nav-link active" href="index.html">Home </a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="#about"> About </a> 
@@ -32,7 +34,7 @@
                     <a class="nav-link" href="#services"> Services</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link" href="#"> Portfolio</a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio</a>
                 </li>
                 <li class="nav-item mr-3">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -42,7 +44,7 @@
 
         <!--BOOK A CONSULT BUTTON-->
         <div>
-            <button type="button" data-toggle="modal" data-target="#myModal" id="modalBtn">book a consult</button>
+            <button type="button" data-toggle="modal" data-target="#myModal" data-backdrop="false" id="modalBtn">book a consult</button>
         </div>
         
         
@@ -112,7 +114,7 @@
                             <label for="budget">Estimated Budget:</label>
                             <input type="text" class="form-control" name="budget" id="budget">
                             <br>
-                            <button type="submit">Submit</button>
+                            <button class="allBtns" type="submit">Submit</button>
                         </form>
                     </div>
                     <!-- Modal footer -->
@@ -126,11 +128,8 @@
 
     <!--JUMBOTRON-->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">First Class Decor'</h1>
-          <p class="lead">Making your dreams possible.</p>
-        </div>
-      </div>
+          <img src="fcdimg/Logos/translogo.svg" alt="firstclasslogo">
+    </div>
     
     <!--ABOUT ME-->
     <h2 class="text-center" id="about">MEET YOUR EVENT PLANNER</h2>
@@ -138,15 +137,28 @@
         <div class="row row-content">
             <div class="col">
                 <div class="media">
-                    <img class="d-flex img-thumbnail" src="#" alt="Janelle Photo" width="400" height="400">
+                    <img class="d-flex img-fluid" src="fcdimg/ProfilePics/Untitled design (1).svg" id="meetPhoto" alt="Janelle Photo">
                     <div class="media-body">
-                        <p class="d-none d-sm-block ml-5 about-text">Decorating is my passion. I started my 
-                            business after graduating with my bachelor degree in business management 
-                            in 2018 and I wanted to do something I loved. I love to decorate and create 
-                            intimate spaces for individuals.  I am very talented and family oriented. 
-                            I strive to be professional and to make your perfect day possible. First 
-                            class decor is just that first class! Contact me today for your quote.
+                        <p class="d-none d-sm-block about-text">
+                        Hello there! I’m Janelle Gaston, founder of First Class Decor’. 
+                        We are a small creative business dedicated to helping you design 
+                        and host a stunning event for the ones you love. As an avid decorator 
+                        and organizer, I am beyond excited to plan your wedding, milestone 
+                        birthday celebration, extravagant launch party, or a classic holiday soiree.
                         </p>
+                        <p class="d-none d-sm-block about-text"> 
+                        I take every opportunity to turn a simple occasion or dinner among friends 
+                        into an efficient, enjoyable and stylish event. I can offer as little or 
+                        as much insight and assistance as you need, with the same goal always at 
+                        heart - to help you and your guests have the best time without needing to 
+                        worry if something has been overlooked in the background (I got you covered!).
+                        I put an emphasis on delivering high quality, consistent results alongside 
+                        friendly, upbeat and inspired service.
+                        </p>
+                        <p class="d-none d-sm-block about-text">Let First Class Decor' make your perfect day possible!</p>
+                        
+                        <footer class="blockquote-footer" id="signature">Janelle Gatson</footer>
+                        
                     </div>
                 </div>
             </div>
@@ -156,37 +168,46 @@
     
     <!--SERVICES-->
     <h2 class="text-center" id="services">SERVICES</h2>
+    
     <div class="container container-svcs">
+        <p class="d-none d-sm-block ml-5 about-text">Whether you’re planning your wedding, a milestone birthday celebration, an extravagant launch party, 
+            or a classic holiday soiree, we’re here to help with every step of the planning process. All of our 
+            services begin with a complimentary consult where we learn more about your goals for the event, 
+            overall budget and planning needs. Then, we create an estimate and get to work executing 
+            the details of your intimate party or big bash.
+        </p>
+        <br>
+        <br>
         <!--First Row-->
         <div class="card-deck mb-5">
             <div class="card">
-                <img src="#" class="card-img-top" height="200" alt="weddings">
+                <img src="fcdimg/weddings/navyanddustyrose.jpg" class="card-img-top" height="200" alt="weddings">
                 <div class="card-body">
                     <h5 class="card-title">Weddings</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
-            <div class="card" width="30">
-                <img src="#" class="card-img-top" height="200" alt="babyshower">
+            <div class="card">
+                <img src="fcdimg/babyshowers/genderrevealprinceorprincess.jpg" class="card-img-top" height="200" alt="babyshower">
                 <div class="card-body">
                     <h5 class="card-title">Babyshowers</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
-            <div class="card" width="30">
-                <img src="#" class="card-img-top" height="200" alt="graduation">
+            <div class="card">
+                <img src="fcdimg/graduations/snider.jpg" class="card-img-top" height="200" alt="graduation">
                 <div class="card-body">
                     <h5 class="card-title">Graduations</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,63 +215,93 @@
         <!--Second Row-->
         <div class="card-deck mb-5">
             <div class="card">
-                <img src="#" class="card-img-top" height="200" alt="birthdays">
+                <img src="fcdimg/birthdays/royalbluebling5.jpg" class="card-img-top" height="200" alt="birthdays">
                 <div class="card-body">
                     <h5 class="card-title">Birthdays</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
             <div class="card">
-                <img src="#" class="card-img-top" height="200" alt="special-events">
+                <img src="fcdimg/special events/fallandwine.jpg" class="card-img-top" height="200" alt="special-events">
                 <div class="card-body">
                     <h5 class="card-title">Special Events</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
             <div class="card">
-                <img src="#" class="card-img-top" height="200" alt="columns-backdrops">
+                <img src="fcdimg/balloon columns,backdrops/pinkandteal.jpg" class="card-img-top" height="200" alt="columns-backdrops">
                 <div class="card-body">
                     <h5 class="card-title">Balloon Columns & Backdrops</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button>
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
         </div>
-          
+        
         <!--Third Row-->
         <div class="card-deck custom-shirts">
             <div class="card">
                 <img src="#" class="card-img-top" height="200" alt="custom-shirts">
                 <div class="card-body">
                     <h5 class="card-title">Custom Shirts</h5>
-                    <p class="card-text">Some quick example text to build on the card 
-                        title and make up the bulk of the card's content.</p>
-                    <button type="button">view photos</button>
-                    <button type="button">book a consult</button>
+                    <button class="allBtns" type="button">view photos</button> 
+                    <a href="contact.html" role="button">
+                    <button class="allBtns" type="button">book a consult</button>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <hr id="special-hr">    
+    <hr> 
+
     <!--TESTIMONIALS-->
     <div class="container container-height">
         <h2 class="text-center" id="testimonials">TESTIMONIALS</h2>
-        <blockquote class="blockquote text-center">
-            <p>"The experience I’ve had with Janelle has been amazing and worry free. I give an idea of colors and she creates
-                exactly what I wanted and more. She has done my daughters 30th bday made it so Beautiful. My granddaughter’s baby
-                shower . She’s so professional. Thank you and I will be calling on you for plenty more events."</p>
-                <footer class="blockquote-footer">Ayanna Cooper</footer>
-        </blockquote>
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote class="blockquote text-center">
+                        <p>"The experience I’ve had with Janelle has been amazing and worry free. I give an idea of colors and she creates
+                            exactly what I wanted and more. She has done my daughters 30th bday made it so Beautiful. My granddaughter’s baby
+                            shower . She’s so professional. Thank you and I will be calling on you for plenty more events."</p>
+                            <footer class="blockquote-footer">Ayanna Cooper</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p>"The experience I’ve had with Janelle has been amazing and worry free. I give an idea of colors and she creates
+                        exactly what I wanted and more. She has done my daughters 30th bday made it so Beautiful. My granddaughter’s baby
+                        shower . She’s so professional. Thank you and I will be calling on you for plenty more events."</p>
+                        <footer class="blockquote-footer">Ayanna Cooper</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote text-center">
+                    <p>"The experience I’ve had with Janelle has been amazing and worry free. I give an idea of colors and she creates
+                        exactly what I wanted and more. She has done my daughters 30th bday made it so Beautiful. My granddaughter’s baby
+                        shower . She’s so professional. Thank you and I will be calling on you for plenty more events."</p>
+                        <footer class="blockquote-footer">Ayanna Cooper</footer>
+                </blockquote>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="fas fa-angle-left fa-2x" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </a>
+        </div>
     </div>
     <hr>
+
     <!--CONTACT-->
     <div class="container">
         <footer>
@@ -259,29 +310,30 @@
                     <hr>
                     <ul class="footer-nav list-unstyled">
                         <li>
-                          <a href="#" class="text-decoration-none text-dark">Home</a>
+                          <a href="#home" class="text-decoration-none text-dark">Home</a>
                         </li>
                         <li>
-                          <a href="#" class="text-decoration-none text-dark">About</a> 
+                          <a href="#about" class="text-decoration-none text-dark">About</a> 
                         </li>
                         <li>
-                            <a href="#" class="text-decoration-none text-dark">Services</a> 
+                            <a href="#services" class="text-decoration-none text-dark">Services</a> 
                           </li>
                           <li>
-                            <a href="#" class="text-decoration-none text-dark">Portfolio</a> 
+                            <a href="portfolio.html" class="text-decoration-none text-dark">Portfolio</a> 
                           </li>
                           <li>
-                            <a href="#" class="text-decoration-none text-dark">Contact</a> 
+                            <a href="contact.html" class="text-decoration-none text-dark">Contact</a> 
                           </li>
                     </ul>
                     <hr>
                 </div>
                 <div class="col">
-                    <img class="mx-auto d-block" src="#" alt="smLogo" height="200" width="200">
+                    <img class="mx-auto d-block" id="footLogo" src="fcdimg/Logos/minlogo.png" alt="smLogo" height="250" width="250">
                 </div>
                 <div class="col text-right">
                     <hr>
-                    <button id="footerBtn" type="button">book a consult</button>
+                    <a href="contact.html" id="footerBtn" role="button">
+                    <button id="footerBtn" type="button">book a consult</button></a>
                     <p id="copyright" class="footer-text">&copy;2020 First Class Decor' Event Planner</p>
                     <p class="footer-text">Site created with <i class="fas fa-heart"></i> by <span>AkilahQ.</span></p>
                     <hr>
@@ -292,10 +344,8 @@
     </div>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
 
